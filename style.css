@@ -1,0 +1,148 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, sans-serif;
+}
+
+.sidebar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 200px;
+    background-color: blue;
+    color: white;
+
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+
+
+}
+
+.content {
+    margin-left: 200px;
+    padding: 20px;
+    
+}
+.content h1{
+    font-size: 90px;
+    margin-left: 50px;
+ 
+}
+
+.content h3{
+    font-size: 40px;
+    margin-left: 50px;
+}
+
+.content h4{
+    font-size: 20px;
+    color: rgb(103, 100, 100);
+    margin-left: 50px;
+}
+
+
+
+.box {
+    width: 50vw;
+    height: 340px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    margin-top: 5%;
+    margin-left: 50px;
+    position: relative;
+    border-radius: 12px;
+    margin-top: 10px;
+}
+.box img{
+    margin-left: 170px;
+    width: 30vw;
+    
+}
+
+.sign{
+    width: 20vw;
+    height: 50px;
+    box-shadow: 0 0 10px rgba(0,0,0, 0.3);
+    margin-left: 85%;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    word-spacing: 3px;
+    margin-top: 40px;
+    position: absolute;
+    right: 3%;
+    top: 2%;
+}
+
+.sign a{
+    text-decoration: none; 
+}
+
+
+.projects{
+    width: 20vw;
+    height: 150px;
+    box-shadow: 0 0 10px rgba(0,0,0, 0.3);
+    position: absolute;
+    right: 3%;
+    top: 22%;
+
+
+}
+#extendpara{
+    color: rgb(118, 116, 116);
+}
+
+.projects h1, h4, p{
+    margin-left: 6%;
+}
+
+.projects img{
+    position: relative;
+    left: 60%;
+    bottom: 90%;
+    width: 5vw;
+    
+}
+
+.sidebar h1{
+    text-align: center;
+}
+.sidebar p{
+    font-size: 14px;
+    text-align: center;
+    letter-spacing: 10px;
+    font-weight: bold;
+}
+
+
+.profile{
+
+    width: 20vw;
+    height: 430px;
+    box-shadow: 0 0 10px rgba(0,0,0, 0.3);
+    position: absolute;
+    right: 3%;
+    bottom: 4%;
+    text-align: left;
+
+}
+
+.profile h3, p{
+    margin-left: 6%;
+}
+
+.profile p{
+    color: grey;
+}
+
+.profile img{
+    width: 12vw;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
