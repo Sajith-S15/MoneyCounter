@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login/Signin</title>
+    <link rel="stylesheet" href="./styles/login.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  </head>
+  <body>
+    <div class="sidebar">
+      <h1>MONEY</h1>
+      <p>.COUNT.</p>
+    </div>
+
+    <div class="login-container">
+      <form id="login-form">
+        <div class="form-group">
+          <h2>Welcome back!</h2>
+          <p>Please login using your account </p>
+          <label for="username">USERNAME:</label>
+          <input type="text" id="username" name="username" required />
+        </div>
+        <div class="form-group">
+          <label for="password">Password:</label>
+          <div class="show-password-icon">
+            <input type="password" id="password" name="password" required />
+            <i class="fa fa-eye" aria-hidden="true" id="showPassword"></i>
+          </div>
+        </div>
+
+        <button type="submit" class="btn">Login</button>
+      </form>
+   
+      <div class="forgot-password">
+        <a href="#" id="forget">Forgot your password?</a>
+      </div>
+
+      <div class="forgot-password">
+        <a href="#" id="reset">Reset here</a>
+      </div>
+
+
+      <div class="forgot-password">
+        <a href="#" class="btn">Create an account</a>
+      </div>
+    </div>
+
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script>
+      const showPasswordIcon = document.getElementById('showPassword');
+      const passwordInput = document.getElementById('password');
+
+      showPasswordIcon.addEventListener('click', function(){
+        const type = passwordInput.getAttribute('type') === 'password' ? 'text' : 'password';
+        passwordInput.setAttribute('type', type)
+        this.classList.toggle('fa-eye-slash');
+      })
+
+    </script>
+  </body>
+</html>
